@@ -1,0 +1,4 @@
+wget命令的使用：
+	指定目录的下载地址：
+		wget -P 目录 下载地址
+		wget -P /etc/software  http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.33-linux-glibc2.5-x86_64.tar.gz
