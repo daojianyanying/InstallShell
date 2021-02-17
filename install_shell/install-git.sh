@@ -2,9 +2,9 @@
 ##################################################
 #
 #Auther:liuxiang
-#CreateDate:2021.2.12
-#Description:安装特定版本的git
-#UpdateDate:2021.2.12
+#CreateDate:2021.2.15
+#Description:安装特定版本的maven
+#UpdateDate:2021.2.15
 #
 ##################################################
 
@@ -27,6 +27,7 @@ yum -y install curl-devel expat-devel openssl-devel zlib-devel gcc perl-ExtUtils
 wget -P $DOWNLOAD_PATH https://codeload.github.com/git/git/tar.gz/v2.29.0
 
 #进入所在的目录
+
 cd $DOWNLOAD_PATH
 tar -zxvf v2.29.0
 cd git-2.29.0
@@ -37,7 +38,6 @@ make prefix=$INSTALL_PATH install
 
 #配置环境
 echo "export PATH=$PATH:/usr/local/git/bin" >> /etc/profile
-source  /etc/profile
 
 git --version
 
@@ -47,3 +47,7 @@ git config --global user.email "liu3574226@163.com"
 cd ~
 cd .ssh
 ssh-keygen -t rsa -C "liu3574226@163.com"
+
+echo -e "\n"
+echo -e "\n"
+echo -e "\n"

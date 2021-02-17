@@ -2,3 +2,50 @@ wget命令的使用：
 	指定目录的下载地址：
 		wget -P 目录 下载地址
 		wget -P /etc/software  http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.33-linux-glibc2.5-x86_64.tar.gz
+		
+tar命令的解压：
+	指定解压的目录：
+		tar zxvf 压缩文件 -C 指定的目录
+		tar zxvf /source/kernel.tgz -C /source/ linux-2.6.29
+		
+mkdir命令：
+	强制创建文件夹:
+		mkdir -p 文件夹路径
+		mkdir -p /usr/local/maven/
+
+yum命令：
+	指定安装目录：
+		yum -c yum配置文件 --installroot=自定义的安装目录 软件
+		yum -c /etc/yum.conf --installroot=/usr/local git
+
+shell输出换行:
+	echo -e "hello\n wrold"
+	结果为：
+		hello
+		 wrold
+
+rpm安装和卸载命令：
+	安装命令：
+		rpm -ivh 包
+	卸载命令：
+		rpm -e --nodeps 包名
+	确认软件是否安装：
+		rpm -qa | grep 软件名
+
+yum命令：
+	安装软件包
+		yum -y install
+	卸载软件包
+		yum -y remove
+	查找软件包
+		yum search 
+	列出所有可安装的包
+		yum list
+		
+centOS7切换用户:
+	su - root
+
+
+	
+
+	

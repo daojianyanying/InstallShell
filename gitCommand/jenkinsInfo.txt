@@ -1,0 +1,4 @@
+jenkins的安装目录：
+
+jenkins的基础配置：
+	
