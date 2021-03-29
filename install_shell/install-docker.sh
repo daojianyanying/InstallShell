@@ -8,7 +8,7 @@
 #
 ##################################################
 set -ex
-set -o pipeline
+set -o pipefail
 
 echo "########start install docker########"
 
