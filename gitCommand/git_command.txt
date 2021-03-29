@@ -31,6 +31,8 @@ rpm安装和卸载命令：
 		rpm -e --nodeps 包名
 	确认软件是否安装：
 		rpm -qa | grep 软件名
+	搜索软件的安装目录：
+		rpm -ql jenkins
 
 yum命令：
 	安装软件包
@@ -44,6 +46,18 @@ yum命令：
 		
 centOS7切换用户:
 	su - root
+	
+nohup命令：
+	后台运行格式：
+		nohup linux命令 &
+	关掉nohup运行的进程：
+		kill -s 9 进程号
+	查看运行的后台进程：
+		ps -ef | grep jenkins	e:显示所有的进程，此参数的效果和指定"A"参数相同  f: ASCII字符显示树状结构，表达程序间的相互关系
+		ps -aux | grep jenkins   a:显示现行终端机下的所有程序，包括其他用户的程序   u:以用户为主的格式来显示程序状况  x: 显示所有程序，不以终端机来区分
+	PID就是进程id
+	
+	
 
 
 	
