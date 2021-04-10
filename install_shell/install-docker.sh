@@ -48,7 +48,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 #安装docker compose
-curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-chmod +x docker-compose
+curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && cd /usr/local/bin/ && chmod +x docker-compose
+
 
 docker-compose version

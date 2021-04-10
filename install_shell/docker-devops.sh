@@ -40,6 +40,7 @@ external_url 'http://192.168.199.231'
 gitlab_rails['gitlab_ssh_host'] = '192.168.199.231'
 gitlab_rails['gitlab_shell_ssh_port'] = 222 # 此端口是run时22端口映射的222端口
 "
+#cd /etc/sysconfig/network-scripts/
 #-p 222:22 时ssh对应的接口
 #--privileged=true 配置gitlab权限，否则gitlab无法启动完成
 # -d：后台运行
