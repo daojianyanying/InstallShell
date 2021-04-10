@@ -13,3 +13,5 @@ set -o pipefail
 
 #安装RZ命令，用以传输文件
 yum -y install lrzsz
+#安装wget命令
+yum -y install wget
