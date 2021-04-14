@@ -16,6 +16,8 @@ DOCKER_DEVOP_IP="192.170.111.0/24"
 docker network create --subnet ${DOCKER_DEVOP_IP} develops-1 && echo "tho network of develops-1 is ${DOCKER_DEVOP_IP}"
 
 #开始业务逻辑
+#启动jenkis
+#启动gitlab
 mkdir -p /home/gitlab/config /home/gitlab/logs /home/gitlab/data
 
 docker pull gitlab/gitlab-ce:13.8.7-ce.0
