@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c05a6b57-1bfd-4b57-84e0-a47fc143c24b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/common/people/CheckSnapShot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/common/people/ScanSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/help-buildType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-test-sources/injected/InjectedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/.owner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/1/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/1/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/1/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/10/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/10/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/10/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/11/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/11/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/11/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/12/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/12/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/12/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/13/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/13/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/13/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/14/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/14/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/14/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/15/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/15/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/15/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/16/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/16/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/16/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/17/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/17/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/17/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/18/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/18/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/18/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/19/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/19/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/19/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/2/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/2/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/2/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/20/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/20/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/20/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/21/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/21/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/21/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/22/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/22/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/22/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/3/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/3/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/3/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/4/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/4/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/4/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/5/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/5/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/5/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/6/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/6/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/6/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/7/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/7/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/7/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/8/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/8/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/8/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/9/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/9/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/9/log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/builds/permalinks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/jobs/4512/nextBuildNumber" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Download metadata.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Download metadata.log.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Download metadata.log.3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Download metadata.log.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Download metadata.log.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Fingerprint cleanup.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Fingerprint cleanup.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log.3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Periodic background build discarder.log.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Workspace clean-up.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Workspace clean-up.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/Workspace clean-up.log.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/telemetry collection.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/telemetry collection.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/logs/tasks/telemetry collection.log.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/queue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/queue.xml.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/secrets/hudson.console.AnnotatedLargeText.consoleAnnotator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/secrets/hudson.console.ConsoleNote.MAC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/secrets/hudson.model.Job.serverCookie" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dockerfile/Docker初级学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dockerfile/Docker初级学习.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/common/people/CheckSnapShotBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/people/CheckSnapShotBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/config.jelly" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/config.jelly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/help-scanPath.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/common/people/CheckSnapShotBuilder/help-pomXmlPath.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\tools-idea\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1rA6IT5urOO6y1pevv5UDDF5LgE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JenkinsPlugins" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tools-idea\github\InstallShell\empty-jenkins\src\main\resources\com\common\people\CheckSnapShotBuilder" />
+      <recent name="D:\tools-idea\github\InstallShell\empty-jenkins\src\main\resources\com\common\people" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="++" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c05a6b57-1bfd-4b57-84e0-a47fc143c24b" name="Default Changelist" comment="" />
+      <created>1618406468525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618406468525</updated>
+      <workItem from="1618406469600" duration="6822000" />
+      <workItem from="1618493182856" duration="61958000" />
+      <workItem from="1618707359154" duration="49303000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618757635578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1618757635578" />
+    <state x="563" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1618742909914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618742909914" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1618742969245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618742969245" />
+    <state width="1493" height="337" key="GridCell.Tab.0.bottom" timestamp="1618761736878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="337" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618761736878" />
+    <state width="1493" height="337" key="GridCell.Tab.0.center" timestamp="1618761736878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="337" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618761736878" />
+    <state width="1493" height="337" key="GridCell.Tab.0.left" timestamp="1618761736878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="337" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618761736878" />
+    <state width="1493" height="337" key="GridCell.Tab.0.right" timestamp="1618761736878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="337" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618761736878" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1618757630580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618757630580" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618412885367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618412885367" />
+  </component>
+</project>
