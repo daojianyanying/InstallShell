@@ -236,10 +236,268 @@ docker.io/library/nginx:1.19.10
   
   ```
 
-  
+- 查看镜像的信息
+
+  **docker images inspect 镜像id**
+
+```shell
+[root@localhost ~]# docker image inspect b9e1dc12387a
+[
+    {	
+    	#
+        "Id": "sha256:b9e1dc12387ae52eee5da783128deb8bdee0dc3b29fc3874cd81cf2190f71099", 
+        "RepoTags": [
+            "nginx:1.18.0"
+        ],
+        "RepoDigests": [
+            "nginx@sha256:ebd0fd56eb30543a9195280eb81af2a9a8e6143496accd6a217c14b06acd1419"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2021-01-12T10:19:48.659168948Z",
+        "Container": "532f2a046dc7add2dfe33a50deadfab25ab290083f63208a7a28be4af8df723a",
+        "ContainerConfig": {
+            "Hostname": "532f2a046dc7",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.18.0",
+                "NJS_VERSION=0.4.4",
+                "PKG_RELEASE=2~buster"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"nginx\" \"-g\" \"daemon off;\"]"
+            ],
+            "Image": "sha256:fa1fa2b1df44f4b913732ec164a6415ae5911a997667a339e8080a5150372408",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "DockerVersion": "19.03.12",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.18.0",
+                "NJS_VERSION=0.4.4",
+                "PKG_RELEASE=2~buster"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "sha256:fa1fa2b1df44f4b913732ec164a6415ae5911a997667a339e8080a5150372408",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 132853477,
+        "VirtualSize": 132853477,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f6f5f45790bbeaa9a269574f85d7ead01e35129667f4be98cb34221b1e5dfe53/diff:/var/lib/docker/overlay2/1b01f7b2ae8b3f3bad7da9a9fbb91858b45c475442014e79e28fe77f2ac9efc9/diff:/var/lib/docker/overlay2/660eb27f1206e80bce1d8e091b80b9c9d1f240dbf2fd715e922f0aa9a0c3ef9c/diff:/var/lib/docker/overlay2/d2d35b1defe2c427b57d9c7862df249fbee20fe82554fa8a8ab94d3d138a2b1c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/37b974fa2b4c3a1a8cf70fc37360487ea099b23e3bbdd57877dee635feffa139/merged",
+                "UpperDir": "/var/lib/docker/overlay2/37b974fa2b4c3a1a8cf70fc37360487ea099b23e3bbdd57877dee635feffa139/diff",
+                "WorkDir": "/var/lib/docker/overlay2/37b974fa2b4c3a1a8cf70fc37360487ea099b23e3bbdd57877dee635feffa139/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:cb42413394c4059335228c137fe884ff3ab8946a014014309676c25e3ac86864",
+                "sha256:fd1498fb7ef6724bdd1a093339141a67a3b52369f4ab954d43766995ac4e9b1a",
+                "sha256:c67dd3decb624f7a11fcad1d04268dea5919eefa74f756609d2c3dccaa51dec6",
+                "sha256:13545bbbc98b3bf216d3dcb2d49f04a4ff66f2ab7918c1cd93842c51dc8dce9a",
+                "sha256:1a4f5de7f6843ded207f31357d585cd570c5396a32dbf4007609fb26d05f5d28"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
+
+```
+
+##### 2.1  容器命令
+
+​	运行容器		docker  run -it  -d  --name=""  镜像id  --net=""  /bin/bash
+
+​	
+
+```shell
+
+```
+
+​	查看容器		docker ps -aq
+
+​	
+
+#### 三、 Docker网络
+
+​	**安装docker时，它会自动创建三个网络，bridge（创建容器默认连接到此网络）、 none 、host**
+
+1. Host模式：容器将不会虚拟出自己的网卡，配置自己的IP等，而是使用宿主机的IP和端口
+2. Bridge模式：此模式会为每一个容器分配、设置IP等，并将容器连接到一个docker0虚拟网桥，通过docker0网桥以及Iptables nat表配置与宿主机通信。
+3. None模式：该模式关闭了容器的网络功能。
+4. Container：创建的容器不会创建自己的网卡，配置自己的IP，而是和一个指定的容器共享IP、端口范围。
+5. 自定义网络
+
+```shell
+[root@iZ8vbisqeqec8ptea2a4cxZ docker]# docker network ls
+NETWORK ID     NAME                  DRIVER    SCOPE
+320b596beabe   bridge                bridge    local
+fe155abe138a   composetest_default   bridge    local
+a5684f0c88b2   host                  host      local
+0a50348eb8a8   none                  null      local
+[root@iZ8vbisqeqec8ptea2a4cxZ docker]#
+```
+
+当docker运行时，会自动使用bridge模式，这个bridge 网络代表docker0网络接口卡，每次启动一个容器都是默认使用bridge，这个可以通过docker  run --network=""来指定网络
+
+```shell
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.28.87.5  netmask 255.255.240.0  broadcast 172.28.95.255
+        inet6 fe80::216:3eff:fe08:62ee  prefixlen 64  scopeid 0x20<link>
+        ether 00:16:3e:08:62:ee  txqueuelen 1000  (Ethernet)
+        RX packets 2189186  bytes 865354016 (825.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1438374  bytes 812398363 (774.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+ [root@iZ8vbisqeqec8ptea2a4cxZ docker]# docker network inspect bridge
+[
+    {
+        "Name": "bridge",
+        "Id": "320b596beabe4b47bb2a2ad215f5cf60e9501f5973465b420d2266307b9e7438",
+        "Created": "2021-04-26T20:08:15.79442833+08:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
+[root@iZ8vbisqeqec8ptea2a4cxZ docker]# 
+```
+
+##### 3.1  docker网络原理
+
+​	**evth-pair**技术
 
 
 
+##### 3.2 自定义网络
 
+​	自定义网络时，一般使用bridge模式。
 
-- 
+​	创建网络：	**docker network create --driver bridge --subnet=192.168.0.0/16  --gateway 192.168.0.1  develpos**
+
+​	启动容器时指定网络： 	**docker run -d -p --name="" --net develops 容器名**
+
+​	容器互相ping：	 **docker exec -it 容器名1 ping 容器名2**
+
+​	
+
+#### 八、 docker-compose
+
+#### 九、 dockerfile多个FROM
+
+#### 十、 docker实际的用法
+
+1. Docker运行Jenkins
+
+   ```shell
+   docker run -d -p 8880:8080 -p 50000:50000 --privileged=true --net="develops" -v /home/docker/jenkins:/var/jenkins_home jenkins/jenkins:2.277.3-centos7
+   ```
+
+   问题：
+
+   ​	cannot touch '/var/jenkins_home/copy_reference_file.log': Permission denied报错：需要修改下目录权限, 因为当映射本地数据卷时，/home/docker/jenkins目录的拥有者为root用户，而容器中jenkins user的uid为1000
+   执行如下命令即可：
+
+   chown -R 1000:1000  /home/docker/jenkins  && docker run -d -p 8880:8080 -p 50000:50000 --privileged=true --net="develops"  -v /home/docker/jenkins:/var/jenkins_home jenkins/jenkins:2.277.3-centos7
+
+   
+
+   修改jenkins的maven下载插件： vim hudson.model.UpdateCenter.xml 替换地址为这个 URL 改成http://mirror.xmission.com/jenkins/updates/update-center.json 或https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json；或者直接用nginx代理--待研究
+
+   
+
+    No such plugin: cloudbees-folder：由于DockerHub中提供的jenkins的版本太低，安装插件cloudbees-folder失败，是因为下载的Jenkins.war里没有cloudbees-folder插件
+
+2. 
+
+3. 
+
+4. 
+
+​	
+
