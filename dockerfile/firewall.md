@@ -82,10 +82,32 @@ net.ipv4.ip_forward = 1
 
 ##### Q13、 一个电脑配置多个git的ssh
 
-
+https://www.jb51.net/article/200087.htm
 
 Q14、 gitlab的clone地址显示不对 gitlab的时间不对
 
 ​	解决方式：
 
 - 
+
+Q5、安装配置repo，在windows上
+
+```shell
+mkdir ~/bin
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+rx ~/bin/repo //如果下载下来的repo直接具有rx权限，这步可以不用做
+
+# 先随便新建源码目录
+mkdir -p ~/AOSP/.repo
+cd ~/AOSP/.repo
+# clone工具集
+git clone https://gerrit.googlesource.com/git-repo
+# 一定要改文件夹名
+mv git-repo repo
+# 回到AOSP源码目录
+cd ..
+# 保证你成功
+repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-10.0.0_r25 --worktree //这里的url可以是http协议url也可以是ssh协议url
+
+```
+
