@@ -15,3 +15,11 @@ set -o pipefail
 yum -y install lrzsz
 #安装wget命令
 yum -y install wget
+#安装gcc的编译环境
+yum -y install gcc-c++
+#安装pcre来解析正则表达式
+yum install -y pcre pcre-devel
+#安装依赖的解压包
+yum install -y zlib zlib-devel
+#ssl功能需要openssl库,安装openssl
+yum install -y openssl openssl-devel

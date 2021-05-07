@@ -18,18 +18,18 @@ docker network create --subnet ${DOCKER_DEVOP_IP} develops-1 && echo "tho networ
 #开始业务逻辑
 #启动jenkis
 #启动gitlab
-mkdir -p /home/gitlab/config /home/gitlab/logs /home/gitlab/data
+mkdir -p /home/docker/gitlab/config /home/docker/gitlab/logs /home/docker/gitlab/data
 
-docker pull gitlab/gitlab-ce:13.8.7-ce.0
+docker pull gitlab/gitlab-ce:13.11.3-ce.0
 
 docker run -d  -p 443:443 -p 80:80 -p 222:22 \
-	--network=develops-1 \
+	--network=develops \
 	--name gitlab \
 	--privileged=true \
-	-v /home/gitlab/config:/etc/gitlab \
-	-v /home/gitlab/logs:/var/log/gitlab \
-	-v /home/gitlab/data:/var/opt/gitlab \
-	gitlab/gitlab-ce:13.8.7-ce.0
+	-v /home/docker/gitlab/config:/etc/gitlab \
+	-v //home/docker/gitlab/logs:/var/log/gitlab \
+	-v /home/docker/gitlab/data:/var/opt/gitlab \
+	gitlab/gitlab-ce:13.11.3-ce.0
 
 #配置文件修改-- vi /data/gitlab/etc/gitlab.rb  external_url 'http://ip'	
 #配置文件修改-- vi /data/gitlab/data/gitlab-rails/etc/gitlab.yml
@@ -49,3 +49,7 @@ gitlab_rails['gitlab_shell_ssh_port'] = 222 # 此端口是run时22端口映射�
 # -p：将容器内部端口向外映射
 # --name：命名容器名称
 # -v：将容器内数据文件夹或者日志、配置等文件夹挂载到宿主机指定目录
+
+#启动jenkins镜像
+mkdir -p /home/docker/jenkins/jenkins_home
+docker run -d -v /home/docker/jenkins/jenkins_home:/var/jenkins_home -p 8888:8080 -p 50000:50000 jenkins/jenkins:2.291-centos7

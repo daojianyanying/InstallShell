@@ -11,12 +11,15 @@
 #业务逻辑开始
 #下载jdk1.8(镜像网址 https://mirrors.tuna.tsinghua.edu.cn/)
 mkdir /opt/software/jdk/
-wget -P /opt/software/jdk/  https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/8/jdk/x64/linux/OpenJDK8U-jdk_x64_linux_hotspot_8u282b08.tar.gz
+wget -P /opt/software/jdk/ https://mirrors.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-linux-x64.tar.gz
 
 #解压软件到对应的目录
 mkdir /usr/local/jdk/
-tar -zxvf /opt/software/jdk/OpenJDK8U-jdk_x64_linux_hotspot_8u282b08.tar.gz -C /usr/local/jdk/
+tar -zxvf /opt/software/jdk/jdk-8u202-linux-x64.tar.gz -C /usr/local/jdk/
 
 #配置jdk命令
 cd /usr/local/jdk/jdk*/bin/
-echo "export PATH=$PATH:/usr/local/jdk/jdk8u282-b08/bin" >> /etc/profile
+echo "export PATH=$PATH:/usr/local/jdk/jdk1.8.0_202/bin" >> /etc/profile
+#清理tar包
+rm -rf /opt/software/jdk
+source /etc/profile
