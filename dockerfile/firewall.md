@@ -109,5 +109,21 @@ cd ..
 # 保证你成功
 repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-10.0.0_r25 --worktree //这里的url可以是http协议url也可以是ssh协议url
 
+
 ```
+
+##### Q15、搭建repo的自己的命令仓库和manifest.git
+
+出现问题和解决方案 ？
+
+待解决的问题：是否可以影直接拷贝的sh的文件的方式就可以实现对命令的使用
+
+- repo_url要替换成git开头的网址，否则报错？
+- 修改repo中的分支
+- 给自己的代码仓库加上一个tag
+- windows环境会报权限问题，linux环境待验证？
+
+解决方案：学习Python语言
+
+
 
