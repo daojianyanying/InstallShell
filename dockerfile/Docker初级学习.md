@@ -470,6 +470,8 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 #### 九、 dockerfile多个FROM
 
+​	
+
 #### 十、 docker实际的用法
 
 1. Docker运行Jenkins
@@ -501,3 +503,12 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ​	
 
+#### 十一、 应用搭建自己的jenkins镜像
+
+##### 	11.1  jenkins的master节点的搭建
+
+​		要求：git版本 1.18以上，需要卸载掉原先的版本
+
+​					maven版本：要求3.30以上，需要配置文件外挂
+
+​					
