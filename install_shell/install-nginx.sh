@@ -12,7 +12,7 @@ set -o pipefail
 
 mkdir -p /opt/software/nginx
 cd /opt/software/nginx 
-wget http://nginx.org/download/nginx-1.20.0.tar.gz
+wget http://mirrors.sohu.com/nginx/nginx-1.20.0.tar.gz
 tar -zxvf nginx-1.20.0.tar.gz 
 cd nginx-1.20.0
 ./configure --prefix=/usr/local/nginx
