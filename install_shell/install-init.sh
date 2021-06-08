@@ -23,3 +23,5 @@ yum install -y pcre pcre-devel
 yum install -y zlib zlib-devel
 #ssl功能需要openssl库,安装openssl
 yum install -y openssl openssl-devel
+#安装ifconfig
+yum -y install net-tools.x86_64
