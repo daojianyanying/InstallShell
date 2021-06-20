@@ -17,12 +17,14 @@ docker network create --subnet ${DOCKER_DEVOP_IP} develops-1 && echo "tho networ
 
 #开始业务逻辑
 #启动jenkis
+docker 
+
 #启动gitlab
 mkdir -p /home/docker/gitlab/config /home/docker/gitlab/logs /home/docker/gitlab/data
 
 docker pull gitlab/gitlab-ce:13.11.3-ce.0
 
-docker run -d  -p 443:443 -p 80:80 -p 222:22 \
+docker run -d  -p 443:443 -p 80:80 -p 2222:22 \
 	--network=develops \
 	--name gitlab \
 	--privileged=true \
@@ -41,6 +43,7 @@ external_url 'http://192.168.199.231'
 # 配置ssh协议所使用的访问地址和端口
 gitlab_rails['gitlab_ssh_host'] = '192.168.199.231'
 gitlab_rails['gitlab_shell_ssh_port'] = 222 # 此端口是run时22端口映射的222端口
+vim gitlab.yml  修改gitclone的路径
 "
 #cd /etc/sysconfig/network-scripts/
 #-p 222:22 时ssh对应的接口
@@ -51,5 +54,19 @@ gitlab_rails['gitlab_shell_ssh_port'] = 222 # 此端口是run时22端口映射�
 # -v：将容器内数据文件夹或者日志、配置等文件夹挂载到宿主机指定目录
 
 #启动jenkins镜像
-mkdir -p /home/docker/jenkins/jenkins_home
-docker run -d -v /home/docker/jenkins/jenkins_home:/var/jenkins_home -p 8888:8080 -p 50000:50000 jenkins/jenkins:2.291-centos7
+mkdir -p /home/docker/jenkins
+chown -R 1000:1000  /home/docker/jenkins  &&  docker run -d -v /home/docker/jenkins:/var/jenkins_home -p 8888:8080 -p 50000:50000 --network=develops --name jenkins jenkins/jenkins:2.291-centos7
+
+
+mkdir -p /data/jenkins
+docker run -itd --name jenkins \
+-p 8080:8080 \
+-p 50000:50000 \
+--privileged=true \
+-v /data/jenkins:/var/jenkins_home jenkins/jenkins:2.289.1-lts-centos7
+
+kubeadm init \
+--apiserver-advertise-adress=192.168.36.160 \
+--image-repository registry.aliyun.com/google_containers \
+--kubernetes-version v1.18.0 \
+--service-cidr=

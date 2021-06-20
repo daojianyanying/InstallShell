@@ -25,3 +25,5 @@ yum install -y zlib zlib-devel
 yum install -y openssl openssl-devel
 #安装ifconfig
 yum -y install net-tools.x86_64
+
+yum -y install httpd
