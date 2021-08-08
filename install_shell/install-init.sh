@@ -27,3 +27,6 @@ yum install -y openssl openssl-devel
 yum -y install net-tools.x86_64
 
 yum -y install httpd
+yum install -y unzip
+yum -y install lsof
+
