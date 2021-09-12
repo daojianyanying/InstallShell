@@ -485,7 +485,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
    ​	cannot touch '/var/jenkins_home/copy_reference_file.log': Permission denied报错：需要修改下目录权限, 因为当映射本地数据卷时，/home/docker/jenkins目录的拥有者为root用户，而容器中jenkins user的uid为1000
    执行如下命令即可：
 
-   chown -R 1000:1000  /home/docker/jenkins  && docker run -d -p 8880:8080 -p 50000:50000 --privileged=true --net="develops"  -v /home/docker/jenkins:/var/jenkins_home jenkins/jenkins:2.277.3-centos7
+   chown -R 1000:1000  /var/docker/jenkins && docker run -d -p 8880:8080 -p 50000:50000 --privileged=true --net="develops"  -v /var/docker/jenkins:/var/jenkins_home jenkins/jenkins:2.277.3-centos7
+
+   docker run -d -p 8288:8080 -p 50000:50000 --privileged=true  -v /var/docker/jenkins:/var/jenkins_home jenkins/jenkins:lts-jdk8
 
    
 
@@ -495,7 +497,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
     No such plugin: cloudbees-folder：由于DockerHub中提供的jenkins的版本太低，安装插件cloudbees-folder失败，是因为下载的Jenkins.war里没有cloudbees-folder插件
 
-2. 
+2. 查看docker的镜像地址： docker info
 
 3. 
 
@@ -512,3 +514,64 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ​					maven版本：要求3.30以上，需要配置文件外挂
 
 ​					
+
+#### 十二、 windows作为linux的agent机器
+
+​	既可以有java命令，也可以使用javaw,俩者的区别是一个时阻塞式，一个是非阻塞式的。运行之后在windows上可以用jps命令查看
+
+java的进程,结束的话，就直接取
+
+```shell
+java/javaw -jar C:\Users\liu35\Downloads\agent.jar -jnlpUrl http://192.168.36.131:8288/computer/windows/jenkins-agent.jnlp -secret 677f68601be58840dc4361bf66e336211bdbc1560df1b7a29399608237d4217b -workDir "D:\jenkins-agent"
+```
+
+```shell
+liu35@lx MINGW64 ~/Desktop
+$ jps
+22944 Jps
+
+######################################
+liu35@lx MINGW64 ~/Downloads
+$ jps
+12612 Jps
+5172 jar
+
+```
+
+#### 十二、 用windows链接windows10系统
+
+开始 ----> 命令行输入远程桌面链接 ---->出现弹窗后，点击选项输入ip地址和用户名  ---->点击连接  ---->  点击使用其他账号 ---->  无法验证，仍然选择是
+
+
+
+#### 十三、 docker镜像怎么不用pull的方式传到设备上
+
+1.将docker镜像导出成tar包
+
+docker save 镜像名：镜像版本  > tar包
+
+2.将tar包导入jenkins
+
+
+
+#### 十四、webhook的注意事项
+
+管理员 ---> setting ---> network ---> outbound request
+
+
+
+#### 十五、 jenkins应该如何集成tscancode
+
+@echo off
+rem TscanCode web account
+
+rem set your src file path
+set srcpath="F:/test"
+set cppresult=./log/cppresult.xml
+set csharpresult=./log/csharpresult.xml
+set luaresult=./log/luaresult.xml
+
+./TscanCode --xml --enable=all --lua ./log %srcpath% 2>%cppresult%
+./TscSharp --xml --lua ./log %srcpath% 2>%csharpresult%
+./tsclua --xml --csharp ./log -fr ./log/csharp.lua.exp -fr ./log/cpp.lua.exp %srcpath% 2>%luaresult% 
+
