@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: empty-jenkins
+Long-Name: empty-jenkins
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.0.1-SNAPSHOT (private-32c6b833-lx)
+Hudson-Version: 2.263.1
+Jenkins-Version: 2.263.1
+Plugin-Developers: 
+Plugin-ScmUrl: https://github.com/jenkinsci/plugin-pom/empty-jenkins
+Libraries: D:\tools-idea\github\InstallShell\empty-jenkins\src\main\re
+ sources,D:\tools-idea\github\InstallShell\empty-jenkins\target\classes
+Resource-Path: D:\tools-idea\github\InstallShell\empty-jenkins\src\mai
+ n\webapp
+

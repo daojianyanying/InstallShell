@@ -575,3 +575,75 @@ set luaresult=./log/luaresult.xml
 ./TscSharp --xml --lua ./log %srcpath% 2>%csharpresult%
 ./tsclua --xml --csharp ./log -fr ./log/csharp.lua.exp -fr ./log/cpp.lua.exp %srcpath% 2>%luaresult% 
 
+
+
+#### 十六、gitlab镜像的安装
+
+1. 镜像启动
+
+```bash
+docker run 
+-d                #后台运行，全称：detach
+-p 8443:443      #将容器内部端口向外映射
+-p 8090:80       #将容器内80端口映射至宿主机8090端口，这是访问gitlab的端口
+-p 8022:22       #将容器内22端口映射至宿主机8022端口，这是访问ssh的端口
+--restart always #容器自启动
+--name gitlab    #设置容器名称为gitlab
+-v /usr/local/gitlab/etc:/etc/gitlab    #将容器/etc/gitlab目录挂载到宿主机/usr/local/gitlab/etc目录下，若宿主机内此目录不存在将会自动创建
+-v /usr/local/gitlab/log:/var/log/gitlab    #与上面一样
+-v /usr/local/gitlab/data:/var/opt/gitlab   #与上面一样
+--privileged=true         #让容器获取宿主机root权限
+twang2218/gitlab-ce-zh    #镜像的名称，这里也可以写镜像ID
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker run \
+-d \
+-p 8443:443 \
+-p 8090:80 \
+-p 8022:22 \
+--restart always \
+--name gitlab \
+-v /usr/local/gitlab/etc:/etc/gitlab \
+-v /usr/local/gitlab/log:/var/log/gitlab \
+-v /usr/local/gitlab/data:/var/opt/gitlab \
+--privileged=true \
+gitlab/gitlab-ce:14.10.2-ce.0
+
+```
+
+2. gitlab配置
+
+   gitlab.rb
+
+   修改ssh的ip和端口：
+
+   ```
+   gitlab_rails['gitlab_ssh_host'] = '192.168.XX.XX'
+   gitlab_rails['gitlab_shell_ssh_port'] = 8022
+   ```
+
+   修改时区：
+
+   ```
+   gitlab_rails['time_zone'] = 'Asia/Shanghai'
+   ```
+
+   修改gitlab网页的ip和端口号
+
+   ```
+   /usr/local/gitlab/data/gitlab-rails/etc/gitlab.yml
+   ==================================================
+   host:
+   port:8090
+   ```
+
+   
+
+3. 初始密码在/etc/initial_root_password
+
+
+
+#### 十七、gitlab-runner的安装
+
+##### 一、windows上的安装
+
+##### 二、linux上的安装
